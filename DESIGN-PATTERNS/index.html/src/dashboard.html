@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /var/www/html/PATTERNS/src</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/nv.d3.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="../js/html5shiv.min.js"></script>
+  <script src="../js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="../index.html">/var/www/html/PATTERNS</a></li>
+        <li><a href="index.html">src</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="library/Strategy/Seminar.php.html#5">Seminar</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Composite/Unit.php.html#4">Unit</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Composite/LaserCannonUnit.php.html#4">LaserCannonUnit</a></td><td class="text-right">33%</td></tr>
+       <tr><td><a href="library/StrategyValidation/Validation/Required.php.html#5">Required</a></td><td class="text-right">33%</td></tr>
+       <tr><td><a href="library/Observer/LoginObserver.php.html#15">LoginObserver</a></td><td class="text-right">42%</td></tr>
+       <tr><td><a href="library/StrategyValidation/Validation/Email.php.html#5">Email</a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="library/StrategyValidation/Validation/Numeric.php.html#5">Numeric</a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="library/Observer/Login.php.html#11">Login</a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="library/Composite/CompositeUnit.php.html#4">CompositeUnit</a></td><td class="text-right">71%</td></tr>
+       <tr><td><a href="library/Strategy/Notifier.php.html#4">Notifier</a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="library/StrategyValidation/Validation.php.html#8">Validation</a></td><td class="text-right">83%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="library/Observer/Login.php.html#11">Login</a></td><td class="text-right">15</td></tr>
+       <tr><td><a href="library/StrategyValidation/Validation/Required.php.html#5">Required</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="library/Composite/CompositeUnit.php.html#4">CompositeUnit</a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="library/StrategyValidation/Validation/Numeric.php.html#5">Numeric</a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="library/Observer/LoginObserver.php.html#15">LoginObserver</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/StrategyValidation/Validation/Email.php.html#5">Email</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Strategy/Notifier.php.html#4">Notifier</a></td><td class="text-right">3</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="library/Observer/Login.php.html#35"><abbr title="Login::anonymous function">anonymous function</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/StrategyValidation/Validation/Numeric.php.html#14"><abbr title="Numeric::getMessageValidation">getMessageValidation</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Observer/LoginObserver.php.html#29"><abbr title="LoginObserver::update">update</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/StrategyValidation/Validation/Email.php.html#14"><abbr title="Email::getMessageValidation">getMessageValidation</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/StrategyValidation/Validation.php.html#25"><abbr title="Validation::getData">getData</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Inheritance/ShopProduct.php.html#163"><abbr title="ShopProduct::getSummaryLine">getSummaryLine</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Composite/LaserCannonUnit.php.html#6"><abbr title="LaserCannonUnit::addUnit">addUnit</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Composite/LaserCannonUnit.php.html#11"><abbr title="LaserCannonUnit::removeUnit">removeUnit</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Composite/Unit.php.html#6"><abbr title="Unit::getComposite">getComposite</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/Strategy/Seminar.php.html#8"><abbr title="Seminar::getCourses">getCourses</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="library/StrategyValidation/Validation/Required.php.html#7"><abbr title="Required::validateData">validateData</a></a></td><td class="text-right">25%</td></tr>
+       <tr><td><a href="library/Observer/Login.php.html#58"><abbr title="Login::handleLogin">handleLogin</a></a></td><td class="text-right">56%</td></tr>
+       <tr><td><a href="library/StrategyValidation/Validation/Email.php.html#7"><abbr title="Email::validateData">validateData</a></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="library/StrategyValidation/Validation/Numeric.php.html#7"><abbr title="Numeric::validateData">validateData</a></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="library/Strategy/Notifier.php.html#6"><abbr title="Notifier::getNotifier">getNotifier</a></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="library/Inheritance/ShopProduct.php.html#185"><abbr title="ShopProduct::isInputValid">isInputValid</a></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="library/Composite/CompositeUnit.php.html#12"><abbr title="CompositeUnit::addUnit">addUnit</a></a></td><td class="text-right">80%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="library/StrategyValidation/Validation/Required.php.html#7"><abbr title="Required::validateData">validateData</abbr></a></td><td class="text-right">10</td></tr>
+       <tr><td><a href="library/Inheritance/ShopProduct.php.html#185"><abbr title="ShopProduct::isInputValid">isInputValid</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="library/Observer/LoginObserver.php.html#29"><abbr title="LoginObserver::update">update</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="library/Observer/Login.php.html#58"><abbr title="Login::handleLogin">handleLogin</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="library/StrategyValidation/Validation/Numeric.php.html#7"><abbr title="Numeric::validateData">validateData</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="library/StrategyValidation/Validation/Email.php.html#7"><abbr title="Email::validateData">validateData</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="library/Strategy/Notifier.php.html#6"><abbr title="Notifier::getNotifier">getNotifier</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="library/Composite/CompositeUnit.php.html#12"><abbr title="CompositeUnit::addUnit">addUnit</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 2.2.3</a> using <a href="http://php.net/" target="_top">PHP 5.6.4-4ubuntu6.4</a> and <a href="http://phpunit.de/">PHPUnit 4.8.9</a> at Tue Mar 22 10:36:53 EET 2016.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../js/jquery.min.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../js/holder.min.js" type="text/javascript"></script>
+  <script src="../js/d3.min.js" type="text/javascript"></script>
+  <script src="../js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([2,0,0,0,2,1,2,1,2,1,2,37], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([10,0,0,1,0,0,1,2,2,1,1,110], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"library\/Composite\/Archer.php.html#4\">Archer<\/a>"],[100,2,"<a href=\"library\/Composite\/Army.php.html#4\">Army<\/a>"],[71.428571428571,7,"<a href=\"library\/Composite\/CompositeUnit.php.html#4\">CompositeUnit<\/a>"],[33.333333333333,3,"<a href=\"library\/Composite\/LaserCannonUnit.php.html#4\">LaserCannonUnit<\/a>"],[0,2,"<a href=\"library\/Composite\/Unit.php.html#4\">Unit<\/a>"],[100,2,"<a href=\"library\/Composite\/UnitScript.php.html#4\">UnitScript<\/a>"],[100,1,"<a href=\"library\/Decorator\/AuthenticateRequest.php.html#9\">AuthenticateRequest<\/a>"],[100,1,"<a href=\"library\/Decorator\/DecorateProcess.php.html#9\">DecorateProcess<\/a>"],[100,1,"<a href=\"library\/Decorator\/LogRequest.php.html#9\">LogRequest<\/a>"],[100,1,"<a href=\"library\/Decorator\/MainProcess.php.html#10\">MainProcess<\/a>"],[100,1,"<a href=\"library\/Decorator\/ProcessRequest.php.html#9\">ProcessRequest<\/a>"],[100,0,"<a href=\"library\/Decorator\/RequestHelper.php.html#9\">RequestHelper<\/a>"],[100,1,"<a href=\"library\/Decorator\/StructureRequest.php.html#9\">StructureRequest<\/a>"],[100,1,"<a href=\"library\/Prototype\/ApptEncoder.php.html#4\">ApptEncoder<\/a>"],[100,1,"<a href=\"library\/Prototype\/BloggsApptEncoder.php.html#4\">BloggsApptEncoder<\/a>"],[100,5,"<a href=\"library\/Factory\/BloggsCommsManager.php.html#4\">BloggsCommsManager<\/a>"],[100,1,"<a href=\"library\/Prototype\/BloggsContactEncoder.php.html#4\">BloggsContactEncoder<\/a>"],[100,1,"<a href=\"library\/Prototype\/BloggsTtdEncoder.php.html#4\">BloggsTtdEncoder<\/a>"],[100,4,"<a href=\"library\/Prototype\/CommsManager.php.html#4\">CommsManager<\/a>"],[100,1,"<a href=\"library\/Prototype\/ContactEncoder.php.html#4\">ContactEncoder<\/a>"],[100,1,"<a href=\"library\/Prototype\/TtdEncoder.php.html#4\">TtdEncoder<\/a>"],[100,5,"<a href=\"library\/Inheritance\/BookProduct.php.html#5\">BookProduct<\/a>"],[100,5,"<a href=\"library\/Inheritance\/CdProduct.php.html#5\">CdProduct<\/a>"],[100,6,"<a href=\"library\/Inheritance\/Discount.php.html#5\">Discount<\/a>"],[100,0,"<a href=\"library\/Strategy\/Lecture.php.html#4\">Lecture<\/a>"],[100,4,"<a href=\"library\/Strategy\/Lesson.php.html#4\">Lesson<\/a>"],[0,1,"<a href=\"library\/Strategy\/Seminar.php.html#5\">Seminar<\/a>"],[92.156862745098,33,"<a href=\"library\/Inheritance\/ShopProduct.php.html#6\">ShopProduct<\/a>"],[96,7,"<a href=\"library\/Inheritance\/ShopProductManager.php.html#9\">ShopProductManager<\/a>"],[100,2,"<a href=\"library\/Inheritance\/ShopProductWriter.php.html#4\">ShopProductWriter<\/a>"],[100,1,"<a href=\"library\/Inheritance\/TestAccessInterface.php.html#4\">TestAccessInterface<\/a>"],[100,2,"<a href=\"library\/Inheritance\/XmlProductWriter.php.html#5\">XmlProductWriter<\/a>"],[66.666666666667,11,"<a href=\"library\/Observer\/Login.php.html#11\">Login<\/a>"],[42.857142857143,4,"<a href=\"library\/Observer\/LoginObserver.php.html#15\">LoginObserver<\/a>"],[100,1,"<a href=\"library\/Observer\/Monitors\/GeneralLogger.php.html#13\">GeneralLogger<\/a>"],[100,1,"<a href=\"library\/Observer\/Monitors\/PartnershipTool.php.html#13\">PartnershipTool<\/a>"],[100,2,"<a href=\"library\/Observer\/Monitors\/SecurityMonitor.php.html#12\">SecurityMonitor<\/a>"],[100,5,"<a href=\"library\/Singleton\/Preferences.php.html#4\">Preferences<\/a>"],[100,2,"<a href=\"library\/Strategy\/CostStrategy.php.html#4\">CostStrategy<\/a>"],[100,2,"<a href=\"library\/Strategy\/FixedCostStrategy.php.html#5\">FixedCostStrategy<\/a>"],[100,1,"<a href=\"library\/Strategy\/MailNotifier.php.html#5\">MailNotifier<\/a>"],[75,3,"<a href=\"library\/Strategy\/Notifier.php.html#4\">Notifier<\/a>"],[100,1,"<a href=\"library\/Strategy\/RegistrationManager.php.html#4\">RegistrationManager<\/a>"],[100,2,"<a href=\"library\/Strategy\/TimedCostStrategy.php.html#5\">TimedCostStrategy<\/a>"],[83.333333333333,4,"<a href=\"library\/StrategyValidation\/Validation.php.html#8\">Validation<\/a>"],[50,4,"<a href=\"library\/StrategyValidation\/Validation\/Email.php.html#5\">Email<\/a>"],[50,5,"<a href=\"library\/StrategyValidation\/Validation\/Numeric.php.html#5\">Numeric<\/a>"],[33.333333333333,5,"<a href=\"library\/StrategyValidation\/Validation\/Required.php.html#5\">Required<\/a>"],[100,3,"<a href=\"library\/StrategyValidation\/Validation\/ValidationStrategy.php.html#5\">ValidationStrategy<\/a>"],[100,4,"<a href=\"library\/Inheritance\/PriceUtilities.php.html#4\">PriceUtilities<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"library\/Composite\/Archer.php.html#9\">Archer::bombardStrength<\/a>"],[100,2,"<a href=\"library\/Composite\/Army.php.html#6\">Army::bombardStrength<\/a>"],[100,1,"<a href=\"library\/Composite\/CompositeUnit.php.html#8\">CompositeUnit::getComposite<\/a>"],[80,2,"<a href=\"library\/Composite\/CompositeUnit.php.html#12\">CompositeUnit::addUnit<\/a>"],[100,2,"<a href=\"library\/Composite\/CompositeUnit.php.html#22\">CompositeUnit::removeUnit<\/a>"],[100,2,"<a href=\"library\/Composite\/CompositeUnit.php.html#24\">CompositeUnit::anonymous function<\/a>"],[0,1,"<a href=\"library\/Composite\/LaserCannonUnit.php.html#6\">LaserCannonUnit::addUnit<\/a>"],[0,1,"<a href=\"library\/Composite\/LaserCannonUnit.php.html#11\">LaserCannonUnit::removeUnit<\/a>"],[100,1,"<a href=\"library\/Composite\/LaserCannonUnit.php.html#16\">LaserCannonUnit::bombardStrength<\/a>"],[0,1,"<a href=\"library\/Composite\/Unit.php.html#6\">Unit::getComposite<\/a>"],[100,1,"<a href=\"library\/Composite\/Unit.php.html#10\">Unit::bombardStrength<\/a>"],[100,2,"<a href=\"library\/Composite\/UnitScript.php.html#6\">UnitScript::joinExisting<\/a>"],[100,1,"<a href=\"library\/Decorator\/AuthenticateRequest.php.html#14\">AuthenticateRequest::process<\/a>"],[100,1,"<a href=\"library\/Decorator\/DecorateProcess.php.html#22\">DecorateProcess::__construct<\/a>"],[100,1,"<a href=\"library\/Decorator\/LogRequest.php.html#14\">LogRequest::process<\/a>"],[100,1,"<a href=\"library\/Decorator\/MainProcess.php.html#15\">MainProcess::process<\/a>"],[100,1,"<a href=\"library\/Decorator\/ProcessRequest.php.html#14\">ProcessRequest::process<\/a>"],[100,1,"<a href=\"library\/Decorator\/StructureRequest.php.html#14\">StructureRequest::process<\/a>"],[100,1,"<a href=\"library\/Prototype\/ApptEncoder.php.html#6\">ApptEncoder::encode<\/a>"],[100,1,"<a href=\"library\/Prototype\/BloggsApptEncoder.php.html#6\">BloggsApptEncoder::encode<\/a>"],[100,1,"<a href=\"library\/Factory\/BloggsCommsManager.php.html#6\">BloggsCommsManager::getHeaderText<\/a>"],[100,1,"<a href=\"library\/Factory\/BloggsCommsManager.php.html#11\">BloggsCommsManager::getApptEncoder<\/a>"],[100,1,"<a href=\"library\/Factory\/BloggsCommsManager.php.html#16\">BloggsCommsManager::getTtdEncoder<\/a>"],[100,1,"<a href=\"library\/Factory\/BloggsCommsManager.php.html#21\">BloggsCommsManager::getContactEncoder<\/a>"],[100,1,"<a href=\"library\/Factory\/BloggsCommsManager.php.html#26\">BloggsCommsManager::getFooterText<\/a>"],[100,1,"<a href=\"library\/Prototype\/BloggsContactEncoder.php.html#6\">BloggsContactEncoder::encode<\/a>"],[100,1,"<a href=\"library\/Prototype\/BloggsTtdEncoder.php.html#6\">BloggsTtdEncoder::encode<\/a>"],[100,1,"<a href=\"library\/Prototype\/CommsManager.php.html#10\">CommsManager::__construct<\/a>"],[100,1,"<a href=\"library\/Prototype\/CommsManager.php.html#17\">CommsManager::getApptEncoder<\/a>"],[100,1,"<a href=\"library\/Prototype\/CommsManager.php.html#22\">CommsManager::getTtdEncoder<\/a>"],[100,1,"<a href=\"library\/Prototype\/CommsManager.php.html#27\">CommsManager::getContactEncoder<\/a>"],[100,1,"<a href=\"library\/Prototype\/ContactEncoder.php.html#6\">ContactEncoder::encode<\/a>"],[100,1,"<a href=\"library\/Prototype\/TtdEncoder.php.html#6\">TtdEncoder::encode<\/a>"],[100,3,"<a href=\"library\/Inheritance\/BookProduct.php.html#20\">BookProduct::__construct<\/a>"],[100,1,"<a href=\"library\/Inheritance\/BookProduct.php.html#42\">BookProduct::getNumberOfPages<\/a>"],[100,1,"<a href=\"library\/Inheritance\/BookProduct.php.html#46\">BookProduct::getSummaryLine<\/a>"],[100,3,"<a href=\"library\/Inheritance\/CdProduct.php.html#20\">CdProduct::__construct<\/a>"],[100,1,"<a href=\"library\/Inheritance\/CdProduct.php.html#41\">CdProduct::getPlayLength<\/a>"],[100,1,"<a href=\"library\/Inheritance\/CdProduct.php.html#46\">CdProduct::getSummaryLine<\/a>"],[100,1,"<a href=\"library\/Inheritance\/Discount.php.html#19\">Discount::setProcentDiscount<\/a>"],[100,1,"<a href=\"library\/Inheritance\/Discount.php.html#25\">Discount::setMaxProductsDiscount<\/a>"],[100,1,"<a href=\"library\/Inheritance\/Discount.php.html#31\">Discount::setProductType<\/a>"],[100,1,"<a href=\"library\/Inheritance\/Discount.php.html#37\">Discount::setTaxRate<\/a>"],[100,1,"<a href=\"library\/Inheritance\/Discount.php.html#44\">Discount::getTaxRate<\/a>"],[100,1,"<a href=\"library\/Inheritance\/Discount.php.html#49\">Discount::calculate<\/a>"],[100,1,"<a href=\"library\/Strategy\/Lesson.php.html#8\">Lesson::__construct<\/a>"],[100,1,"<a href=\"library\/Strategy\/Lesson.php.html#14\">Lesson::cost<\/a>"],[100,1,"<a href=\"library\/Strategy\/Lesson.php.html#18\">Lesson::chargeType<\/a>"],[100,1,"<a href=\"library\/Strategy\/Lesson.php.html#22\">Lesson::getDuration<\/a>"],[0,1,"<a href=\"library\/Strategy\/Seminar.php.html#8\">Seminar::getCourses<\/a>"],[100,1,"<a href=\"library\/Inheritance\/ShopProduct.php.html#53\">ShopProduct::__construct<\/a>"],[100,1,"<a href=\"library\/Inheritance\/ShopProduct.php.html#63\">ShopProduct::setProductID<\/a>"],[100,1,"<a href=\"library\/Inheritance\/ShopProduct.php.html#69\">ShopProduct::getProductID<\/a>"],[100,1,"<a href=\"library\/Inheritance\/ShopProduct.php.html#74\">ShopProduct::setTitle<\/a>"],[100,1,"<a href=\"library\/Inheritance\/ShopProduct.php.html#80\">ShopProduct::getTitle<\/a>"],[100,1,"<a href=\"library\/Inheritance\/ShopProduct.php.html#85\">ShopProduct::setType<\/a>"],[100,1,"<a href=\"library\/Inheritance\/ShopProduct.php.html#91\">ShopProduct::getType<\/a>"],[100,1,"<a href=\"library\/Inheritance\/ShopProduct.php.html#96\">ShopProduct::setFirstName<\/a>"],[100,1,"<a href=\"library\/Inheritance\/ShopProduct.php.html#102\">ShopProduct::getFirstName<\/a>"],[100,1,"<a href=\"library\/Inheritance\/ShopProduct.php.html#107\">ShopProduct::setMainName<\/a>"],[100,1,"<a href=\"library\/Inheritance\/ShopProduct.php.html#114\">ShopProduct::getMainName<\/a>"],[100,1,"<a href=\"library\/Inheritance\/ShopProduct.php.html#119\">ShopProduct::setDiscount<\/a>"],[100,1,"<a href=\"library\/Inheritance\/ShopProduct.php.html#125\">ShopProduct::getDiscount<\/a>"],[100,1,"<a href=\"library\/Inheritance\/ShopProduct.php.html#130\">ShopProduct::setPrice<\/a>"],[100,1,"<a href=\"library\/Inheritance\/ShopProduct.php.html#136\">ShopProduct::getPrice<\/a>"],[100,1,"<a href=\"library\/Inheritance\/ShopProduct.php.html#141\">ShopProduct::setProductProperty<\/a>"],[100,1,"<a href=\"library\/Inheritance\/ShopProduct.php.html#147\">ShopProduct::getProductProperty<\/a>"],[100,1,"<a href=\"library\/Inheritance\/ShopProduct.php.html#152\">ShopProduct::setProductKey<\/a>"],[100,1,"<a href=\"library\/Inheritance\/ShopProduct.php.html#158\">ShopProduct::getProductKey<\/a>"],[0,1,"<a href=\"library\/Inheritance\/ShopProduct.php.html#163\">ShopProduct::getSummaryLine<\/a>"],[100,1,"<a href=\"library\/Inheritance\/ShopProduct.php.html#170\">ShopProduct::getProducer<\/a>"],[100,1,"<a href=\"library\/Inheritance\/ShopProduct.php.html#176\">ShopProduct::getProductType<\/a>"],[75,7,"<a href=\"library\/Inheritance\/ShopProduct.php.html#185\">ShopProduct::isInputValid<\/a>"],[100,1,"<a href=\"library\/Inheritance\/ShopProduct.php.html#200\">ShopProduct::createProductKey<\/a>"],[100,1,"<a href=\"library\/Inheritance\/ShopProduct.php.html#211\">ShopProduct::verifyProductKey<\/a>"],[100,1,"<a href=\"library\/Inheritance\/ShopProduct.php.html#218\">ShopProduct::setCreatedProduct<\/a>"],[100,1,"<a href=\"library\/Inheritance\/ShopProduct.php.html#223\">ShopProduct::getCreatedProduct<\/a>"],[100,1,"<a href=\"library\/Inheritance\/ShopProductManager.php.html#17\">ShopProductManager::__construct<\/a>"],[100,1,"<a href=\"library\/Inheritance\/ShopProductManager.php.html#26\">ShopProductManager::calculateDiscount<\/a>"],[95.121951219512,5,"<a href=\"library\/Inheritance\/ShopProductManager.php.html#44\">ShopProductManager::createProduct<\/a>"],[100,1,"<a href=\"library\/Inheritance\/ShopProductWriter.php.html#6\">ShopProductWriter::addProduct<\/a>"],[100,1,"<a href=\"library\/Inheritance\/ShopProductWriter.php.html#12\">ShopProductWriter::write<\/a>"],[100,1,"<a href=\"library\/Inheritance\/TestAccessInterface.php.html#6\">TestAccessInterface::cdInfo<\/a>"],[100,2,"<a href=\"library\/Inheritance\/XmlProductWriter.php.html#7\">XmlProductWriter::write<\/a>"],[100,1,"<a href=\"library\/Observer\/Login.php.html#25\">Login::attach<\/a>"],[100,1,"<a href=\"library\/Observer\/Login.php.html#34\">Login::detach<\/a>"],[0,1,"<a href=\"library\/Observer\/Login.php.html#35\">Login::anonymous function<\/a>"],[100,2,"<a href=\"library\/Observer\/Login.php.html#44\">Login::notify<\/a>"],[56.25,4,"<a href=\"library\/Observer\/Login.php.html#58\">Login::handleLogin<\/a>"],[100,1,"<a href=\"library\/Observer\/Login.php.html#78\">Login::setStatus<\/a>"],[100,1,"<a href=\"library\/Observer\/Login.php.html#82\">Login::getStatus<\/a>"],[100,1,"<a href=\"library\/Observer\/LoginObserver.php.html#24\">LoginObserver::__construct<\/a>"],[0,2,"<a href=\"library\/Observer\/LoginObserver.php.html#29\">LoginObserver::update<\/a>"],[100,1,"<a href=\"library\/Observer\/LoginObserver.php.html#35\">LoginObserver::doUpdate<\/a>"],[100,1,"<a href=\"library\/Observer\/Monitors\/GeneralLogger.php.html#15\">GeneralLogger::doUpdate<\/a>"],[100,1,"<a href=\"library\/Observer\/Monitors\/PartnershipTool.php.html#15\">PartnershipTool::doUpdate<\/a>"],[100,2,"<a href=\"library\/Observer\/Monitors\/SecurityMonitor.php.html#14\">SecurityMonitor::doUpdate<\/a>"],[100,1,"<a href=\"library\/Singleton\/Preferences.php.html#9\">Preferences::__construct<\/a>"],[100,2,"<a href=\"library\/Singleton\/Preferences.php.html#14\">Preferences::getInstance<\/a>"],[100,1,"<a href=\"library\/Singleton\/Preferences.php.html#23\">Preferences::setProperty<\/a>"],[100,1,"<a href=\"library\/Singleton\/Preferences.php.html#29\">Preferences::getProperty<\/a>"],[100,1,"<a href=\"library\/Strategy\/CostStrategy.php.html#6\">CostStrategy::cost<\/a>"],[100,1,"<a href=\"library\/Strategy\/CostStrategy.php.html#7\">CostStrategy::chargeType<\/a>"],[100,1,"<a href=\"library\/Strategy\/FixedCostStrategy.php.html#6\">FixedCostStrategy::cost<\/a>"],[100,1,"<a href=\"library\/Strategy\/FixedCostStrategy.php.html#10\">FixedCostStrategy::chargeType<\/a>"],[100,1,"<a href=\"library\/Strategy\/MailNotifier.php.html#7\">MailNotifier::inform<\/a>"],[75,2,"<a href=\"library\/Strategy\/Notifier.php.html#6\">Notifier::getNotifier<\/a>"],[100,1,"<a href=\"library\/Strategy\/Notifier.php.html#18\">Notifier::inform<\/a>"],[100,1,"<a href=\"library\/Strategy\/RegistrationManager.php.html#6\">RegistrationManager::register<\/a>"],[100,1,"<a href=\"library\/Strategy\/TimedCostStrategy.php.html#7\">TimedCostStrategy::cost<\/a>"],[100,1,"<a href=\"library\/Strategy\/TimedCostStrategy.php.html#10\">TimedCostStrategy::chargeType<\/a>"],[100,1,"<a href=\"library\/StrategyValidation\/Validation.php.html#12\">Validation::__construct<\/a>"],[100,1,"<a href=\"library\/StrategyValidation\/Validation.php.html#17\">Validation::validateData<\/a>"],[100,1,"<a href=\"library\/StrategyValidation\/Validation.php.html#21\">Validation::getMessageValidation<\/a>"],[0,1,"<a href=\"library\/StrategyValidation\/Validation.php.html#25\">Validation::getData<\/a>"],[66.666666666667,3,"<a href=\"library\/StrategyValidation\/Validation\/Email.php.html#7\">Email::validateData<\/a>"],[0,1,"<a href=\"library\/StrategyValidation\/Validation\/Email.php.html#14\">Email::getMessageValidation<\/a>"],[66.666666666667,4,"<a href=\"library\/StrategyValidation\/Validation\/Numeric.php.html#7\">Numeric::validateData<\/a>"],[0,1,"<a href=\"library\/StrategyValidation\/Validation\/Numeric.php.html#14\">Numeric::getMessageValidation<\/a>"],[25,4,"<a href=\"library\/StrategyValidation\/Validation\/Required.php.html#7\">Required::validateData<\/a>"],[100,1,"<a href=\"library\/StrategyValidation\/Validation\/Required.php.html#17\">Required::getMessageValidation<\/a>"],[100,1,"<a href=\"library\/StrategyValidation\/Validation\/ValidationStrategy.php.html#9\">ValidationStrategy::__construct<\/a>"],[100,1,"<a href=\"library\/StrategyValidation\/Validation\/ValidationStrategy.php.html#13\">ValidationStrategy::validateData<\/a>"],[100,1,"<a href=\"library\/StrategyValidation\/Validation\/ValidationStrategy.php.html#15\">ValidationStrategy::getMessageValidation<\/a>"],[100,1,"<a href=\"library\/Inheritance\/PriceUtilities.php.html#7\">PriceUtilities::setTax<\/a>"],[100,1,"<a href=\"library\/Inheritance\/PriceUtilities.php.html#11\">PriceUtilities::calculateTax<\/a>"],[100,1,"<a href=\"library\/Inheritance\/PriceUtilities.php.html#25\">PriceUtilities::setTaxRate<\/a>"],[100,1,"<a href=\"library\/Inheritance\/PriceUtilities.php.html#32\">PriceUtilities::getTaxRate<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

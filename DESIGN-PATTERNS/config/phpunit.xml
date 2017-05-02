@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="../Autoloader.php">
+    <testsuites>
+        <!--<testsuite name="inheritance">-->
+         	 <!--<directory>../tests/library/Inheritance</directory>-->
+        <!--</testsuite>-->
+		<!--<testsuite name="observer">-->
+         	 <!--<directory>../tests/library/Observer</directory>-->
+        <!--</testsuite>-->
+        <!--<testsuite name="composition">-->
+         	 <!--<directory>../tests/library/Strategy</directory>-->
+        <!--</testsuite>-->
+		<!--<testsuite name="generating_objects">-->
+			<!--<directory>../tests/library/Singleton</directory>-->
+		<!--</testsuite>-->
+		<!--<testsuite name="factory_method">-->
+			<!--<directory>../tests/library/Factory</directory>-->
+		<!--</testsuite>-->
+		<!--<testsuite name="prototype_pattern">-->
+			<!--<directory>../tests/library/Prototype</directory>-->
+		<!--</testsuite>-->
+		<!--<testsuite name="composite_pattern">-->
+			<!--<directory>../tests/library/Composite</directory>-->
+		<!--</testsuite>-->
+		<!--<testsuite name="strategy_validation">-->
+			<!--<directory>../tests/library/StrategyValidation</directory>-->
+		<!--</testsuite>-->
+	    <testsuite name="decorator_pattern">
+			<directory>../tests/library/Decorator</directory>
+		</testsuite>
+		<!--<testsuite name="facade_pattern">-->
+			<!--<directory>../tests/library/Facade</directory>-->
+		<!--</testsuite>-->
+    </testsuites>
+</phpunit>
