@@ -2,7 +2,10 @@
 <phpunit bootstrap="../Autoloader.php">
     <testsuites>
 	    <testsuite name="thumbs_generator">
-			<directory>../tests/library/ThumbnailsGeneratorResize</directory>
-		</testsuite>
+				<directory>../tests/library/ThumbnailsGeneratorResize</directory>
+			</testsuite>
+			<testsuite name="simple_image_modification_suite">
+				<directory>../tests/library/ClaviskaImageModificationSuite</directory>
+			</testsuite>
     </testsuites>
 </phpunit>
