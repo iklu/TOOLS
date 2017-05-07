@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="../Autoloader.php">
+    <testsuites>
+	    <testsuite name="thumbs_generator">
+			<directory>../tests/library/ThumbnailsGeneratorResize</directory>
+		</testsuite>
+    </testsuites>
+</phpunit>
