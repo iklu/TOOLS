@@ -1,0 +1,74 @@
+he best programming standards and practises that I follow when developing an application
+
+13/02/2016 - PHP
+
+Years ago I nearly failed in an exam just because my code wasn't easy to follow and understand. My lecturer was lost in the code but he knew that it was working as expected so he awarded me the lowest possible grade to pass the exam. I learned my lesson! Your code may work fine but it may also be rubbish at same time. You get what I mean!
+
+Everyone can have their opinion on how to code but at least we all should follow some kind of standards or best practises to make our code easy to understand, easy to follow, easy to refactor so on. by everyone. The standards and the best practises differ from person to person so I'm going list what I consider is the best when it comes to coding.
+
+My list
+
+Some obvious points below have flexibility so I don't push myself to the limits too hard. If you don't leave a space for flexibility then you won't enjoy what you're doing. Obviously we're writing a piece of code, not trying to rediscovering the World. Also some of the points are language or framework dependent.
+
+    I follow PSR-2 Coding Style Guide.
+
+    I use TDD (Test Driven Development) frameworks like PHPspec or PHPUnit.
+
+    I use BDD (Behavior Driven Development) frameworks like Behat.
+
+    I version my code with Semantic Versioning.
+
+    I use DocBlock tools like phpDocumentor to document my application.
+
+    I tend to have a README.md file to tell people what my application is all about.
+
+    I try not to define more than 5 method parameters.
+
+    I try not to have more than 15 methods in a class.
+
+    I try to keep "public" methods as thin as possible and do most of the work in "private" methods.
+
+    I try not to have more than 25 lines of code in a method.
+
+    I avoid having God objects in my applications.
+
+    I follow DRY and SOLID principles.
+
+    I analyse source code and fix PSR coding standards issues with PHP-CS-Fixer or PHP_CodeSniffer.
+
+    I use PHP Mess Detector to look for potential problems or bad smell within the source code.
+
+    I use PHP Copy/Paste Detector.
+
+    I use phploc to measure the size of my projects.
+
+    I try not to introduce unnecessary functionality because You aren't gonna need it.
+
+    I'm aware that Worse is better.
+
+    I tend to use Interface where needed.
+
+    I tend to use Dependency Injection design pattern.
+
+    I follow Agile software development methods.
+
+    I always use GIT, apply git-flow and branching model techniques.
+
+    I always consider refactoring my code.
+
+    Before and while coding I tend to use ERD and UML modelling techniques.
+
+    I don't like Cargo cult programming.
+
+    I'm always open for changes and listen to everybody else's opinions.
+
+
+Workplace advice
+
+    Never victimise your work colleagues in front of anyone if they do something wrong. Talk to them privately in a constructive manner instead. What goes around comes around!
+
+    Never try to benefit or gain anything out of your colleagues' mistakes. You'll most likely be named as "sly" so just be humble instead.
+
+    Never get cocky if you succeeded doing something but your colleague didn't. Remember you are not the gift of God so just keep your gob shut!
+
+    Never go public if your colleague doesn't know how to do something. Teach him instead of going lower than a plant.
